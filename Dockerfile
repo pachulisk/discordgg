@@ -10,6 +10,7 @@ FROM base
 # copy only the dependencies installation from the 1st stage image
 COPY --from=builder /root/.local /root/.local
 COPY cogs /app/cogs
+COPY common /app/common
 COPY bot.py /app/bot.py
 WORKDIR /app
 
