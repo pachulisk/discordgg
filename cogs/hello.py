@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from common import CogExtension
+from ..common import CogExtension
 # 定義名為 Hello 的 Cog
 class Hello(CogExtension):
 
