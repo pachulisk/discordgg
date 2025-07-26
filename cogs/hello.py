@@ -1,10 +1,8 @@
 import discord
 from discord.ext import commands
-
+from common import CogExtension
 # 定義名為 Hello 的 Cog
-class Hello(commands.Cog):
-    def __init__(self, bot: commands.Bot):
-        self.bot = bot
+class Hello(CogExtension):
 
     # 前綴指令
     @commands.command()
